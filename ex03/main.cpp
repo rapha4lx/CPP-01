@@ -6,8 +6,7 @@ int main(void)
 {
     {
         Weapon club = Weapon("crude spiked club");
-        std::cout << "weapon " << &club << std::endl;
-        
+
         HumanA bob("Bob", club);
         bob.attack();
         club.setType("some other type of club");
@@ -15,6 +14,7 @@ int main(void)
     }
     {
         Weapon club = Weapon("crude spiked club");
+
         HumanB jim("Jim");
         jim.setWeapon(club);
         jim.attack();
