@@ -1,5 +1,5 @@
-NAME = zombie
-SRC = main.cpp Zombie.cpp zombieHorde.cpp
+NAME = program
+SRC = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
 OBJ = $(SRC:.cpp=.o)
 CC = c++ -g
 CFLAGS = -Wall -Wextra -Werror -std=c++98
