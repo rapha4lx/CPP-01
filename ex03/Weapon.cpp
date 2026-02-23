@@ -1,15 +1,14 @@
 #include "Weapon.hpp"
 
-Weapon::Weapon(const std::string &type): type(type)
+Weapon::Weapon(const std::string &type) : type(type)
 {
 }
 
 Weapon::~Weapon()
 {
-    std::cout << this->type << " Destructor Called " << std::endl;    
 }
 
-std::string Weapon::getType()
+const std::string &Weapon::getType() const
 {
     return this->type;
 }
